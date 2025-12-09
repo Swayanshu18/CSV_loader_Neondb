@@ -1,0 +1,112 @@
+.container {
+  margin-bottom: 1.5rem;
+}
+
+.container h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.dropdown {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: #e5e7eb;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-top: 0.25rem;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+}
+
+.option:hover {
+  background: #f9fafb;
+}
+
+.option input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.rangeGroup {
+  margin-bottom: 1rem;
+}
+
+.rangeGroup label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.rangeInputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rangeInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.warning {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.resetBtn {
+  width: 100%;
+  background: #ef4444;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.resetBtn:hover {
+  background: #dc2626;
+}
