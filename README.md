@@ -45,4 +45,3 @@ A high-performance full-stack application to manage and analyze retail transacti
     - create `.env` with `VITE_API_URL=http://localhost:5000/api`
     - `npm run dev`
 
-For deep-dive technical details, see [Architecture Doc](docs/architecture.md).
