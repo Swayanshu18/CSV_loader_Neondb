@@ -41,7 +41,8 @@ const SalesDashboard = () => {
     // get filter options from backend
     const getOpts = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/sales/filters');
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+            const res = await axios.get(`${apiUrl}/sales/filters`);
             setOpts(res.data);
         } catch (e) {
             console.log("error fetching filters", e); // TODO: handle better
@@ -71,7 +72,8 @@ const SalesDashboard = () => {
                 }
             });
 
-            const res = await axios.get(`http://localhost:5000/api/sales?${p.toString()}`);
+            const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+            const res = await axios.get(`${apiUrl}/sales?${p.toString()}`);
             setData(res.data.data);
             setPgCount(res.data.totalPages);
         } catch (e) {

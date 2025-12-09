@@ -1,0 +1,26 @@
+# Git configuration
+node_modules/
+.git/
+npm-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Production builds
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (too large for GitHub)
+backend/data/
+data/
